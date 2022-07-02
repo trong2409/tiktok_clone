@@ -8,6 +8,7 @@ import { useState } from 'react';
 import images from '~/assets/images';
 import { Wrapper as PopperWrapper } from '../../Popper';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 
 function Header() {
     const [searcResult, setSearchResult] = useState([]);
@@ -47,7 +48,11 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('action')}></div>
+                <div className={cx('action')}>
+                    <Button rounded>
+                        Login
+                    </Button>
+                </div>
             </div>
         </div>
     );
